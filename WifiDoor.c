@@ -21,7 +21,7 @@ int main(int argc, char **argv){
                 exit(1);
         }
 
-        if(mysql_real_connect(con, "localhost", "root", "I1l2y3lc!",
+        if(mysql_real_connect(con, "localhost", "root", "*passwordhere*",
                  "gpio", 3306, NULL, 0) == NULL){
                 fprintf(stderr, "%s\n", mysql_error(con));
                 mysql_close(con);
